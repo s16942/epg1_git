@@ -1,0 +1,21 @@
+//--- s16942 ---//
+Fork - na stronie github'a
+//klonowanie repozytorium
+git clone https://github.com/s16942/epg1_git.git
+cd epg_git/
+//skrót na stworzenie nowego brancha u¿ywaj¹c -b
+git checkout -b hw-s16942
+//przejscie na rebase-me
+git checkout rebase-me
+//rebase
+git rebase hw-s16942
+//przesuniecie galezi na koniec rebase-me
+git log
+git checkout hw-s16942
+git merge 4660e5
+//³¹cznie z ga³êci¹ merge-me
+git checkout merge-me
+git checkout hw-s16942
+git merge merge-me
+//both modified, wiêc trzeba manualnie edytowaæ README.md
+nano README.md
